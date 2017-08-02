@@ -49,18 +49,6 @@ for command in commands:
   objindex = command.index("-o")
   source.object = os.path.normpath(os.path.join(directory, command[objindex+1]))
 
-def dict_diff(first, second):
-    diff = {}
-    for key in first.keys():
-        if (not key in second):
-            diff[key] = (first[key], "KEYNOTFOUND")
-        elif (first[key] != second[key]):
-            diff[key] = (first[key], second[key])
-    for key in second.keys():
-        if (not key in first):
-            diff[key] = ("KEYNOTFOUND", second[key])
-    return diff
-
 ddata = parser.asdict()
 # Verify that we get the same dictionary by reloading this
 assert ddata == DepParser.fromdict(ddata).asdict()

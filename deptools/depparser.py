@@ -28,7 +28,7 @@ class DepParser(object):
 
   @property
   def headers(self):
-    return self._headers.items()
+    return self._headers.values()
 
   @property
   def filtered_headers(self):
@@ -76,6 +76,20 @@ class DepParser(object):
       "headers": [x.asdict() for x in sorted(self.filtered_headers, key=lambda x: x.name)]
     }
     return d
+
+  def remove_root(self, prefix):
+    """Remove a root prefix from all objects."""
+    l = len(prefix)
+    for source in self.source_files:
+      if source.name and source.name.startswith(prefix):
+        source.name = source.name[l:]
+      if source.object and source.object.startswith(prefix):
+        source.object = source.object[l:]
+    for header in self.headers:
+      if header.name.startswith(prefix):
+        header.name = header.name[l:]
+    # Reconstruct the header map
+    self._headers = {x.name: x for x in self.headers}
 
   @classmethod
   def fromdict(cls, d):
