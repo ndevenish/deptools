@@ -1,0 +1,1308 @@
+_pycbf:
+  module: cbflib
+  sources: [/Users/nickd/dials/dist/modules/cbflib/pycbf/pycbf_wrap.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_airy_disk.c]
+acqiris_ext:
+  module: xfel
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/xfel/acqiris_ext.cpp]
+ann:
+  module: annlib
+  sources: [/Users/nickd/dials/dist/modules/annlib/src/ANN.cpp, /Users/nickd/dials/dist/modules/annlib/src/bd_fix_rad_search.cpp,
+    /Users/nickd/dials/dist/modules/annlib/src/bd_pr_search.cpp, /Users/nickd/dials/dist/modules/annlib/src/bd_search.cpp,
+    /Users/nickd/dials/dist/modules/annlib/src/bd_tree.cpp, /Users/nickd/dials/dist/modules/annlib/src/brute.cpp,
+    /Users/nickd/dials/dist/modules/annlib/src/kd_dump.cpp, /Users/nickd/dials/dist/modules/annlib/src/kd_fix_rad_search.cpp,
+    /Users/nickd/dials/dist/modules/annlib/src/kd_pr_search.cpp, /Users/nickd/dials/dist/modules/annlib/src/kd_search.cpp,
+    /Users/nickd/dials/dist/modules/annlib/src/kd_split.cpp, /Users/nickd/dials/dist/modules/annlib/src/kd_tree.cpp,
+    /Users/nickd/dials/dist/modules/annlib/src/kd_util.cpp, /Users/nickd/dials/dist/modules/annlib/src/perf.cpp,
+    /Users/nickd/dials/dist/modules/annlib_adaptbx/ann/ann_adaptor.cpp, annlib_adaptbx/self_include/ANN.cpp,
+    annlib_adaptbx/self_include/bd_fix_rad_search.cpp, annlib_adaptbx/self_include/bd_pr_search.cpp,
+    annlib_adaptbx/self_include/bd_search.cpp, annlib_adaptbx/self_include/bd_tree.cpp,
+    annlib_adaptbx/self_include/brute.cpp, annlib_adaptbx/self_include/kd_dump.cpp,
+    annlib_adaptbx/self_include/kd_fix_rad_search.cpp, annlib_adaptbx/self_include/kd_pr_search.cpp,
+    annlib_adaptbx/self_include/kd_search.cpp, annlib_adaptbx/self_include/kd_split.cpp,
+    annlib_adaptbx/self_include/kd_tree.cpp, annlib_adaptbx/self_include/kd_util.cpp,
+    annlib_adaptbx/self_include/perf.cpp]
+annlib_ext:
+  module: annlib_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/annlib_adaptbx/ann/boost_python/annlib_ext.cpp]
+asymmetric_map:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/asymmetric_map.cpp]
+boost_adaptbx_graph_breadth_first_search_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/graph/breadth_first_search_ext.cpp]
+boost_adaptbx_graph_clustering_algorithm_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/graph/clustering_algorithm_ext.cpp]
+boost_adaptbx_graph_connected_component_algorithm_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/graph/connected_component_algorithm_ext.cpp]
+boost_adaptbx_graph_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/graph/graph_ext.cpp]
+boost_adaptbx_graph_graph_structure_comparison_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/graph/graph_structure_comparison_ext.cpp]
+boost_adaptbx_graph_maximum_clique_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/graph/maximum_clique_ext.cpp]
+boost_adaptbx_graph_metric_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/graph/metric_ext.cpp]
+boost_adaptbx_graph_min_cut_max_flow_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/graph/min_cut_max_flow_ext.cpp]
+boost_adaptbx_graph_utility_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/graph/utility_ext.cpp]
+boost_adaptbx_python_streambuf_test_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/tests/python_streambuf_test_ext.cpp]
+boost_optional_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/optional_ext.cpp]
+boost_python.dylib:
+  module: cbflib
+  sources: []
+boost_python.lo:
+  module: boost
+  sources: [/Users/nickd/dials/dist/modules/boost/libs/python/src/converter/arg_to_python_base.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/converter/builtin_converters.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/converter/from_python.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/converter/registry.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/converter/type_id.cpp, /Users/nickd/dials/dist/modules/boost/libs/python/src/dict.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/errors.cpp, /Users/nickd/dials/dist/modules/boost/libs/python/src/exec.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/import.cpp, /Users/nickd/dials/dist/modules/boost/libs/python/src/list.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/long.cpp, /Users/nickd/dials/dist/modules/boost/libs/python/src/module.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/numeric.cpp, /Users/nickd/dials/dist/modules/boost/libs/python/src/object/class.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/object/enum.cpp, /Users/nickd/dials/dist/modules/boost/libs/python/src/object/function.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/object/function_doc_signature.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/object/inheritance.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/object/iterator.cpp, /Users/nickd/dials/dist/modules/boost/libs/python/src/object/life_support.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/object/pickle_support.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/object/stl_iterator.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/object_operators.cpp, /Users/nickd/dials/dist/modules/boost/libs/python/src/object_protocol.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/slice.cpp, /Users/nickd/dials/dist/modules/boost/libs/python/src/str.cpp,
+    /Users/nickd/dials/dist/modules/boost/libs/python/src/tuple.cpp, /Users/nickd/dials/dist/modules/boost/libs/python/src/wrapper.cpp]
+boost_python_hybrid_times_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/hybrid_times_ext.cpp]
+boost_python_meta_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/meta_ext.cpp]
+boost_rational_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/rational_ext.cpp]
+boost_tuple_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/tuple_ext.cpp]
+cbf:
+  module: cbflib
+  sources: [/Users/nickd/dials/dist/modules/cbflib/src/cbf.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_alloc.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/cbf_ascii.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_binary.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/cbf_byte_offset.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_canonical.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/cbf_codes.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_compress.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/cbf_context.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_file.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/cbf_lex.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_nibble_offset.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/cbf_packed.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_predictor.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/cbf_read_binary.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_read_mime.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/cbf_simple.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_string.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/cbf_stx.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_tree.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/cbf_uncompressed.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_write.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/cbf_write_binary.c, /Users/nickd/dials/dist/modules/cbflib/src/cbf_ws.c,
+    /Users/nickd/dials/dist/modules/cbflib/src/img.c, /Users/nickd/dials/dist/modules/cbflib/src/md5c.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/cbflib_adaptbx/detectors/buffer_based_service.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cbflib_adaptbx/detectors/cbf_adaptor.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cbflib_adaptbx/detectors/cbf_byte_offset_optimized.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cbflib_adaptbx/detectors/mar_adaptor.cpp]
+cbflib.tst_memory:
+  module: cbflib_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cbflib_adaptbx/detectors/tst_memory.cpp]
+cbflib_ext:
+  module: cbflib_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cbflib_adaptbx/detectors/boost_python/cbflib_ext.cpp]
+ccp4io:
+  module: ccp4io
+  sources: [/Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/ccp4_array.c, /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/ccp4_parser.c,
+    /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/ccp4_unitcell.c, /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/cmap_accessor.c,
+    /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/cmap_close.c, /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/cmap_data.c,
+    /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/cmap_header.c, /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/cmap_labels.c,
+    /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/cmap_open.c, /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/cmap_skew.c,
+    /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/cmap_stats.c, /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/cmap_symop.c,
+    /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/cmtzlib.c, /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/cvecmat.c,
+    /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/library_err.c, /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/library_file.c,
+    /Users/nickd/dials/dist/modules/ccp4io/libccp4/ccp4/library_utils.c, /Users/nickd/dials/dist/modules/ccp4io/mmdb/hybrid_36.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_atom.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_bondmngr.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_chain.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_cifdefs.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_coormngr.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_cryst.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_ficif.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_io_file.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_io_stream.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_machine_.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_manager.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_mask.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_math_.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_math_align.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_math_bfgsmin.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_math_fft.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_math_graph.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_math_linalg.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_math_rand.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_mattype.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_mmcif_.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_model.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_root.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_rwbrook.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_selmngr.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_seqsuperpose.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_symop.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_tables.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_title.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_uddata.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_utils.cpp, /Users/nickd/dials/dist/modules/ccp4io/mmdb/mmdb_xml_.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/ssm/ssm_align.cpp, /Users/nickd/dials/dist/modules/ccp4io/ssm/ssm_csia.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/ssm/ssm_graph.cpp, /Users/nickd/dials/dist/modules/ccp4io/ssm/ssm_malign.cpp,
+    /Users/nickd/dials/dist/modules/ccp4io/ssm/ssm_superpose.cpp, /Users/nickd/dials/dist/modules/ccp4io/ssm/ssm_vxedge.cpp,
+    ccp4io_adaptbx/ccp4_diskio_f.c, ccp4io_adaptbx/ccp4_general.c, ccp4io_adaptbx/ccp4_general_f.c,
+    ccp4io_adaptbx/ccp4_parser_f.c, ccp4io_adaptbx/ccp4_program.c, ccp4io_adaptbx/ccp4_unitcell_f.c,
+    ccp4io_adaptbx/cmaplib_f.c, ccp4io_adaptbx/cmtzlib_f.c, ccp4io_adaptbx/csymlib.c,
+    ccp4io_adaptbx/csymlib_f.c, /Users/nickd/dials/dist/modules/ccp4io_adaptbx/fortran_call_stubs.c,
+    ccp4io_adaptbx/library_f.c, /Users/nickd/dials/dist/modules/ccp4io_adaptbx/printf_wrappers.c]
+ccp4io_adaptbx_ext:
+  module: ccp4io_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/ccp4io_adaptbx/ext.cpp]
+cctbx:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/attenuation_coefficient.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/basic.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/covalent_radii.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/electron_scattering/peng1996.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/fp_fdp.cpp, cctbx/eltbx/henke.cpp,
+    cctbx/eltbx/henke_tables_01_12.cpp, cctbx/eltbx/henke_tables_13_24.cpp, cctbx/eltbx/henke_tables_25_36.cpp,
+    cctbx/eltbx/henke_tables_37_48.cpp, cctbx/eltbx/henke_tables_49_60.cpp, cctbx/eltbx/henke_tables_61_72.cpp,
+    cctbx/eltbx/henke_tables_73_84.cpp, cctbx/eltbx/henke_tables_85_92.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/icsd_radii.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/neutron.cpp, cctbx/eltbx/sasaki.cpp,
+    cctbx/eltbx/sasaki_tables_01_12.cpp, cctbx/eltbx/sasaki_tables_13_24.cpp, cctbx/eltbx/sasaki_tables_25_36.cpp,
+    cctbx/eltbx/sasaki_tables_37_48.cpp, cctbx/eltbx/sasaki_tables_49_60.cpp, cctbx/eltbx/sasaki_tables_61_72.cpp,
+    cctbx/eltbx/sasaki_tables_73_82.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/tiny_pse.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/wavelengths.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/xray_scattering/it1992.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/xray_scattering/n_gaussian.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/xray_scattering/n_gaussian_raw.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/xray_scattering/wk1995.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/asu.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/bins.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/index_generator.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/index_span.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/match_bijvoet_mates.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/match_indices.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/match_multi_indices.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/sym_equiv.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/bricks.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/change_of_basis_op.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/find_affine.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/group_codes.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/hall_in.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/lattice_tr.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/lattice_symmetry.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/miller.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/reciprocal_space_asu.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/reciprocal_space_ref_asu.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/rot_mx.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/rot_mx_info.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/row_echelon_solve.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/rt_mx.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/select_generators.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/seminvariant.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/site_symmetry.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/space_group.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/space_group_type.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/symbols.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/tensor_rank_2.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/tr_group.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/tr_vec.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/utils.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/wyckoff.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/reference_settings/hall_symbol_table.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/reference_settings/matrix_group_code_table.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/reference_settings/normalizer.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/reference_settings/wyckoff.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/uctbx/uctbx.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/uctbx/spoil_optimization.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/uctbx/crystal_orientation.cpp]
+cctbx.convert_ccp4_symop_lib:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/examples/convert_ccp4_symop_lib.cpp]
+cctbx.find_distances:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/examples/find_distances.cpp]
+cctbx.getting_started:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/examples/getting_started.cpp]
+cctbx.lattice_symmetry:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/examples/lattice_symmetry.cpp]
+cctbx.sym_equiv_sites:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/examples/sym_equiv_sites.cpp]
+cctbx.sys_abs_equiv_space_groups:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/examples/sys_abs_equiv_space_groups.cpp]
+cctbx_adp_restraints_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/adp_restraints/adp_restraints_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/adp_restraints/adp_restraints_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/adp_restraints/adp_similarity_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/adp_restraints/aniso_restraints_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/adp_restraints/fixed_u_eq_adp_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/adp_restraints/isotropic_adp_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/adp_restraints/rigid_bond_bpl.cpp]
+cctbx_adptbx_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/adptbx/boost_python/adptbx_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/adptbx/boost_python/hirshfeld.cpp]
+cctbx_array_family_flex_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/array_family/boost_python/flex_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/array_family/boost_python/flex_hendrickson_lattman.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/array_family/boost_python/flex_miller_index.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/array_family/boost_python/flex_xray_scatterer.cpp]
+cctbx_asymmetric_map_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/asymmetric_map_ext.cpp]
+cctbx_covariance_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/covariance/boost_python/covariance_ext.cpp]
+cctbx_crystal_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/crystal/asu_clusters_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/crystal/close_packing_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/crystal/coordination_sequences_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/crystal/crystal_ext.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cctbx/crystal/direct_space_asu_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/crystal/incremental_pairs_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/crystal/neighbors_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/crystal/pair_tables_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/crystal/site_cluster_analysis_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/crystal/symmetry_bpl.cpp]
+cctbx_dmtbx_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/dmtbx/boost_python/dmtbx_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/dmtbx/boost_python/triplet_generator.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/dmtbx/boost_python/triplet_phase_relation.cpp]
+cctbx_eltbx_attenuation_coefficient_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/boost_python/attenuation_coefficient_ext.cpp]
+cctbx_eltbx_chemical_elements_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/boost_python/chemical_elements_ext.cpp]
+cctbx_eltbx_covalent_radii_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/boost_python/covalent_radii_ext.cpp]
+cctbx_eltbx_fp_fdp_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/boost_python/fp_fdp_ext.cpp]
+cctbx_eltbx_henke_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/boost_python/henke_ext.cpp]
+cctbx_eltbx_icsd_radii_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/boost_python/icsd_radii_ext.cpp]
+cctbx_eltbx_neutron_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/boost_python/neutron_ext.cpp]
+cctbx_eltbx_sasaki_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/boost_python/sasaki_ext.cpp]
+cctbx_eltbx_tiny_pse_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/boost_python/tiny_pse_ext.cpp]
+cctbx_eltbx_wavelengths_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/boost_python/wavelengths_ext.cpp]
+cctbx_eltbx_xray_scattering_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/eltbx/boost_python/xray_scattering_ext.cpp]
+cctbx_emma_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/boost_python/emma_ext.cpp]
+cctbx_french_wilson_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/boost_python/french_wilson_ext.cpp]
+cctbx_geometry_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry/boost_python/geometry_ext.cpp]
+cctbx_geometry_restraints_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/angle_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/bond_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/bond_similarity_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/bond_sorted_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/chirality_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/dihedral_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/geometry_restraints_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/motif_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/nonbonded_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/nonbonded_sorted_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/parallelity_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/geometry_restraints/planarity_bpl.cpp]
+cctbx_large_scale_merging_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/examples/merging/large_scale_merging_ext.cpp]
+cctbx_maptbx_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/basic_map.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/coordinate_transformers.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/grid_indices_around_sites.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/grid_tags.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/gridding.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/mapper.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/maptbx_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/misc.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/peak_search.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/pymol_interface.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/real_space_refinement.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/statistics.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/maptbx/boost_python/structure_factors.cpp]
+cctbx_masks_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/masks/boost_python/masks_ext.cpp]
+cctbx_math_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/math/boost_python/math_ext.cpp]
+cctbx_merging_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/merging/ext.cpp]
+cctbx_miller_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/amplitude_normalisation.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/asu.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/bins.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/change_basis.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/expand_to_p1.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/f_calc_map.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/index_generator.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/index_span.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/lookup_utils.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/match_bijvoet_mates.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/match_indices.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/match_multi_indices.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/merge_equivalents.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/miller_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/phase_integrator.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/phase_transfer.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/randomize_amplitude_and_phase.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/slices.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/miller/boost_python/sym_equiv.cpp]
+cctbx_multipolar_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/multipolar/aspherical_ext.cpp]
+cctbx_orientation_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/boost_python/orientation_ext.cpp]
+cctbx_sgtbx_asu:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/direct_space_asu/proto/cut.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/direct_space_asu/proto/direct_space_asu.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/direct_space_asu/proto/reference_table.cpp]
+cctbx_sgtbx_asu_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/direct_space_asu/proto/asu_ext.cpp]
+cctbx_sgtbx_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/brick.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/change_of_basis.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/find_affine.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/lattice_symmetry.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/phase_info.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/reciprocal_space_asu.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/rot_mx.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/rt_mx.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/search_symmetry.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/select_generators.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/seminvariant.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/sgtbx_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/site_symmetry.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/space_group.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/space_group_type.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/sym_equiv_sites.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/symbols.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/tensor_rank_2.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/tr_vec.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/boost_python/wyckoff.cpp]
+cctbx_statistics_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/boost_python/statistics_ext.cpp]
+cctbx_symmetry_search_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/symmetry_search/boost_python/symmetry_search_ext.cpp]
+cctbx_translation_search_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/translation_search/boost_python/fast_nv1995.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/translation_search/boost_python/fast_terms.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/translation_search/boost_python/symmetry_flags.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/translation_search/boost_python/translation_search_ext.cpp]
+cctbx_uctbx_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/uctbx/boost_python/fast_minimum_reduction.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/uctbx/boost_python/uctbx_ext.cpp]
+cctbx_xray_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/conversions.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/curvatures_simple.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/extinction.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/f_model_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/fast_gradients.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/gradient_flags.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/gradients_direct.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/grouped_data.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/minimization.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/parameter_map.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/sampled_model_density.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/sampling_base.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/scatterer.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/scatterer_flags.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/scattering_type_registry.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/structure_factors_direct.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/structure_factors_simple.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/targets.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/twin_components.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/twin_targets.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/boost_python/xray_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/targets/shelxl_wght_ls_bpl.cpp]
+cctbx_xray_observations_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/observations/boost_python/observations.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/cctbx/xray/observations/boost_python/observations_ext.cpp]
+cma_es_ext:
+  module: cma_es
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cma_es/cma/cmaes.cpp, /Users/nickd/dials/dist/modules/cctbx_project/cma_es/cma_es_ext.cpp]
+determine_unit_cell_ext:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/uctbx/determine_unit_cell/ext.cpp]
+dials_algorithms_background_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/background/boost_python/background_ext.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/background/boost_python/helpers.cc]
+dials_algorithms_background_glm_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/background/glm/boost_python/ext.cc]
+dials_algorithms_background_gmodel_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/background/gmodel/boost_python/ext.cc]
+dials_algorithms_background_median_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/background/median/boost_python/ext.cc]
+dials_algorithms_background_modeller_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/background/boost_python/modeller_ext.cc]
+dials_algorithms_background_simple_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/background/simple/boost_python/background_simple_ext.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/background/simple/boost_python/creator.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/background/simple/boost_python/modeller.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/background/simple/boost_python/outlier_rejector.cc]
+dials_algorithms_centroid_simple_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/centroid/simple/boost_python/simple_ext.cc]
+dials_algorithms_filter_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/filtering/boost_python/filter_ext.cc]
+dials_algorithms_image_centroid_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/image/centroid/boost_python/centroid_ext.cc]
+dials_algorithms_image_connected_components_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/image/connected_components/boost_python/connected_components_ext.cc]
+dials_algorithms_image_fill_holes_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/image/fill_holes/boost_python/fill_holes_ext.cc]
+dials_algorithms_image_filter_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/image/filter/boost_python/anisotropic_diffusion.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/image/filter/boost_python/convolve.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/image/filter/boost_python/distance.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/image/filter/boost_python/fano_filter.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/image/filter/boost_python/filter_ext.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/image/filter/boost_python/mean_and_variance.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/image/filter/boost_python/median.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/image/filter/boost_python/summed_area.cc]
+dials_algorithms_image_threshold_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/image/threshold/boost_python/local.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/image/threshold/boost_python/threshold_ext.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/image/threshold/boost_python/unimodal.cc]
+dials_algorithms_indexing_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/indexing/boost_python/fft3d.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/indexing/boost_python/indexing_ext.cc]
+dials_algorithms_integration_bayes_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/integration/bayes/boost_python/ext.cc]
+dials_algorithms_integration_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/integration/boost_python/corrections.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/integration/boost_python/integration_ext.cc]
+dials_algorithms_integration_fit_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/integration/fit/boost_python/ext.cc]
+dials_algorithms_integration_integrator_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/integration/boost_python/integration_integrator_ext.cc]
+dials_algorithms_integration_maximum_likelihood_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/integration/maximum_likelihood/boost_python/ext.cc]
+dials_algorithms_integration_sum_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/integration/sum/boost_python/integration_sum_ext.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/integration/sum/boost_python/summation.cc]
+dials_algorithms_polygon_clip_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/polygon/clip/boost_python/clip_ext.cc]
+dials_algorithms_polygon_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/polygon/boost_python/polygon_ext.cc]
+dials_algorithms_polygon_spatial_interpolation_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/polygon/boost_python/spatial_interpolation_ext.cc]
+dials_algorithms_profile_model_gaussian_rs_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/profile_model/gaussian_rs/boost_python/gaussian_rs_ext.cc]
+dials_algorithms_profile_model_gaussian_rs_transform_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/profile_model/gaussian_rs/transform/boost_python/transform_ext.cc]
+dials_algorithms_profile_model_modeller_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/profile_model/modeller/boost_python/ext.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/profile_model/modeller/boost_python/modeller.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/profile_model/modeller/boost_python/sampler.cc]
+dials_algorithms_shoebox_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/shoebox/boost_python/find_overlapping.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/shoebox/boost_python/mask_builder.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/shoebox/boost_python/mask_code.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/shoebox/boost_python/mask_empirical.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/shoebox/boost_python/mask_overlapping.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/shoebox/boost_python/overload_checker.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/shoebox/boost_python/shoebox_ext.cc]
+dials_algorithms_simulation_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/simulation/boost_python/simulation_ext.cc]
+dials_algorithms_spatial_indexing_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/spatial_indexing/boost_python/octree.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spatial_indexing/boost_python/quadtree.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spatial_indexing/boost_python/spatial_indexing_ext.cc]
+dials_algorithms_spot_finding_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/spot_finding/boost_python/spot_finding_ext.cc]
+dials_algorithms_spot_finding_helen_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/spot_finding/helen/boost_python/ext.cc]
+dials_algorithms_spot_prediction_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/index_generator.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/pixel_labeller.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/pixel_to_miller_index.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/ray_intersection.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/ray_predictor.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/reeke_index_generator.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/reflection_predictor.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/rotation_angles.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/scan_varying_helpers.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/scan_varying_ray_predictor.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/spot_prediction_ext.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/spot_prediction/boost_python/stills_ray_predictor.cc]
+dials_algorithms_statistics_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/statistics/boost_python/statistics_ext.cc]
+dials_array_family_flex_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/array_family/boost_python/flex_binner.cc,
+    /Users/nickd/dials/dist/modules/dials/array_family/boost_python/flex_centroid.cc,
+    /Users/nickd/dials/dist/modules/dials/array_family/boost_python/flex_ext.cc, /Users/nickd/dials/dist/modules/dials/array_family/boost_python/flex_int6.cc,
+    /Users/nickd/dials/dist/modules/dials/array_family/boost_python/flex_intensity.cc,
+    /Users/nickd/dials/dist/modules/dials/array_family/boost_python/flex_observation.cc,
+    /Users/nickd/dials/dist/modules/dials/array_family/boost_python/flex_prediction.cc,
+    /Users/nickd/dials/dist/modules/dials/array_family/boost_python/flex_reflection_table.cc,
+    /Users/nickd/dials/dist/modules/dials/array_family/boost_python/flex_shoebox.cc,
+    /Users/nickd/dials/dist/modules/dials/array_family/boost_python/flex_shoebox_extractor.cc,
+    /Users/nickd/dials/dist/modules/dials/array_family/boost_python/flex_unit_cell.cc]
+dials_model_data_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/model/data/boost_python/image_volume.cc,
+    /Users/nickd/dials/dist/modules/dials/model/data/boost_python/adjacency_list.cc,
+    /Users/nickd/dials/dist/modules/dials/model/data/boost_python/shoebox.cc, /Users/nickd/dials/dist/modules/dials/model/data/boost_python/observation.cc,
+    /Users/nickd/dials/dist/modules/dials/model/data/boost_python/prediction.cc, /Users/nickd/dials/dist/modules/dials/model/data/boost_python/pixel_list.cc,
+    /Users/nickd/dials/dist/modules/dials/model/data/boost_python/ray.cc, /Users/nickd/dials/dist/modules/dials/model/data/boost_python/image.cc,
+    /Users/nickd/dials/dist/modules/dials/model/data/boost_python/data_ext.cc]
+dials_model_serialize_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/model/serialize/boost_python/serialize_ext.cc]
+dials_refinement_helpers_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/refinement/boost_python/gallego_yezzi.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/refinement/boost_python/gaussian_smoother.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/refinement/boost_python/mahalanobis.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/refinement/boost_python/outlier_helpers.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/refinement/boost_python/parameterisation_helpers.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/refinement/boost_python/refinement_ext.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/refinement/boost_python/restraints_helpers.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/refinement/boost_python/rtmats.cc]
+dials_scaling_helpers_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/scaling/boost_python/obs_manager_helpers.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/scaling/boost_python/scale_parameterisation_helpers.cc,
+    /Users/nickd/dials/dist/modules/dials/algorithms/scaling/boost_python/scaling_ext.cc]
+dials_util_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/util/boost_python/ext.cc]
+dials_viewer_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/viewer/boost_python/RGB_2d.cc, /Users/nickd/dials/dist/modules/dials/viewer/boost_python/RGB_2d_ext.cc]
+driver1:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/lbfgsb/dev/driver1.cpp]
+driver2:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/lbfgsb/dev/driver2.cpp]
+driver3:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/lbfgsb/dev/driver3.cpp]
+dxtbx_ext:
+  module: dxtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/dxtbx/boost_python/to_ewald_sphere_helpers.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/boost_python/ext.cpp]
+dxtbx_format_image_ext:
+  module: dxtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/dxtbx/format/boost_python/image_ext.cc]
+dxtbx_format_nexus_ext:
+  module: dxtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/dxtbx/format/boost_python/nexus_ext.cc]
+dxtbx_model_ext:
+  module: dxtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/beam.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/goniometer.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/kappa_goniometer.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/multi_axis_goniometer.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/panel.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/detector.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/scan.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/scan_helpers.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/crystal.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/parallax_correction.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/pixel_to_millimeter.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/experiment.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/experiment_list.cc,
+    /Users/nickd/dials/dist/modules/cctbx_project/dxtbx/model/boost_python/model_ext.cc]
+dxtbxspotfinder:
+  module: spotfinder
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/spotfinder/dxtbx_toolbox/libdistl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/spotfinder/dxtbx_toolbox/distl.cpp]
+fable_ext:
+  module: fable
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/fable/ext.cpp]
+fftpack_timer:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/fftpack/timing/fftpack_timer.cpp]
+gltbx_fonts_ext:
+  module: gltbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/gltbx/fonts_ext.cpp, gltbx/font_ucs_8x13.cpp,
+    gltbx/font_ucs_9x15.cpp, gltbx/font_ucs_10x20.cpp]
+gltbx_gl_ext:
+  module: gltbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/gltbx/gl_ext.cpp, gltbx/gl_defines_00_bpl.cpp,
+    gltbx/gl_defines_01_bpl.cpp, gltbx/gl_defines_02_bpl.cpp, gltbx/gl_defines_03_bpl.cpp,
+    gltbx/gl_defines_04_bpl.cpp, gltbx/gl_defines_05_bpl.cpp, gltbx/gl_defines_06_bpl.cpp,
+    gltbx/gl_defines_07_bpl.cpp, gltbx/gl_functions_00_bpl.cpp, gltbx/gl_functions_01_bpl.cpp,
+    gltbx/gl_functions_02_bpl.cpp, gltbx/gl_functions_03_bpl.cpp, gltbx/gl_functions_04_bpl.cpp,
+    gltbx/gl_functions_05_bpl.cpp, gltbx/gl_functions_06_bpl.cpp, gltbx/gl_functions_07_bpl.cpp,
+    gltbx/gl_functions_08_bpl.cpp, gltbx/gl_functions_09_bpl.cpp, gltbx/gl_functions_10_bpl.cpp,
+    gltbx/gl_functions_11_bpl.cpp, gltbx/gl_functions_12_bpl.cpp, gltbx/gl_functions_13_bpl.cpp,
+    gltbx/gl_functions_14_bpl.cpp, gltbx/gl_functions_15_bpl.cpp]
+gltbx_glu_ext:
+  module: gltbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/gltbx/glu_ext.cpp, gltbx/glu_defines_00_bpl.cpp,
+    gltbx/glu_defines_01_bpl.cpp, gltbx/glu_functions_00_bpl.cpp, gltbx/glu_functions_01_bpl.cpp,
+    gltbx/glu_functions_02_bpl.cpp, gltbx/glu_functions_03_bpl.cpp]
+gltbx_quadrics_ext:
+  module: gltbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/gltbx/quadrics_ext.cpp]
+gltbx_util_ext:
+  module: gltbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/gltbx/util_ext.cpp, /Users/nickd/dials/dist/modules/gui_resources/gl2ps/gl2ps.c]
+gltbx_viewer_utils_ext:
+  module: gltbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/gltbx/viewer_utils_ext.cpp]
+handle_test:
+  module: chiltbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/chiltbx/handle_test.cpp]
+hybrid_36_fem:
+  module: iotbx
+  sources: [iotbx/pdb/hybrid_36_fem.cpp]
+iotbx_ccp4_map_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/ccp4_map/ext.cpp]
+iotbx_cif_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3baserecognizer.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3basetree.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3basetreeadaptor.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3bitset.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3collections.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3commontoken.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3commontree.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3commontreeadaptor.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3commontreenodestream.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3convertutf.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3cyclicdfa.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3debughandlers.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3encodings.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3exception.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3filestream.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3inputstream.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3intstream.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3lexer.c, /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3parser.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3rewritestreams.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3string.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3tokenstream.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/antlr3/src/antlr3treeparser.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/cif/boost_python/cif_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/ucif/cifParser.cpp, /Users/nickd/dials/dist/modules/cctbx_project/ucif/cifLexer.cpp]
+iotbx_detectors_bruker_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/detectors/bruker_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/detectors/bruker.cpp]
+iotbx_detectors_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/detectors/detectors_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/detectors/image_divider.cpp]
+iotbx_dsn6_map_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/dsn6/ext.cpp]
+iotbx_dtrek_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/misc/boost_python/dtrek_ext.cpp]
+iotbx_mtz:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/mtz/object.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/mtz/crystal.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/mtz/dataset.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/mtz/column.cpp]
+iotbx_mtz_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/mtz/ext.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/mtz/object_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/mtz/crystal_bpl.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/mtz/dataset_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/mtz/column_bpl.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/mtz/batch_bpl.cpp]
+iotbx_pdb:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/hybrid_36_c.c,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/hybrid_36_cpp.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/utils.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/write_utils.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/hierarchy.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/hierarchy_select.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/hierarchy_atoms.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/construct_hierarchy.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/overall_counts.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/hierarchy_write.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/atom_selection.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/input.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/input_write.cpp]
+iotbx_pdb_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/ext.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/hybrid_36_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/common_residue_names_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/rna_dna_atom_names_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/input_bpl.cpp, /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/xray_structure_bpl.cpp]
+iotbx_pdb_hierarchy_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/hierarchy_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/hierarchy_atom_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/pdb/hierarchy_atoms_bpl.cpp]
+iotbx_scalepack_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/misc/boost_python/scalepack_ext.cpp]
+iotbx_shelx_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/shelx/shelx_ext.cpp]
+iotbx_wildcard_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/wildcard_ext.cpp]
+iotbx_xplor:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/xplor/map_reader.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/iotbx/xplor/map_writer.cpp]
+iotbx_xplor_ext:
+  module: iotbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/iotbx/xplor/boost_python/xplor_ext.cpp]
+legacy_scale:
+  module: xfel
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/xfel/metrology/legacy_scale/scale_core.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/xfel/metrology/legacy_scale/bandpass_gaussian.cpp]
+mmtbx_alignment_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/alignment_ext.cpp]
+mmtbx_building_loop_closure_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/building/loop_closure/ccd_bpl.cpp]
+mmtbx_bulk_solvent_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/bulk_solvent/bulk_solvent_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/mmtbx/bulk_solvent/bulk_solvent.cpp]
+mmtbx_cablam_align_utils_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/cablam/boost_python/cablam_align_utils_ext.cpp]
+mmtbx_den_restraints_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/den/boost_python/den_ext.cpp]
+mmtbx_dssp_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/secondary_structure/dssp_ext.cpp]
+mmtbx_dynamics_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/dynamics/dynamics_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/mmtbx/dynamics/dynamics.cpp]
+mmtbx_f_model_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/f_model/f_model_ext.cpp]
+mmtbx_geometry_asa_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/geometry/boost_python/asa_ext.cpp]
+mmtbx_geometry_clash_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/geometry/boost_python/clash_ext.cpp]
+mmtbx_geometry_indexing_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/geometry/boost_python/indexing_ext.cpp]
+mmtbx_geometry_primitive_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/geometry/boost_python/primitive_ext.cpp]
+mmtbx_geometry_shared_types_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/geometry/boost_python/shared_types_ext.cpp]
+mmtbx_geometry_sphere_surface_sampling_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/geometry/boost_python/sphere_surface_sampling_ext.cpp]
+mmtbx_hydrogens_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/hydrogens/hydrogens_ext.cpp]
+mmtbx_masks:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/masks/atom_mask.cpp]
+mmtbx_masks_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/masks/masks_ext.cpp]
+mmtbx_max_lik_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/max_lik/max_lik_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/mmtbx/max_lik/max_lik.cpp]
+mmtbx_ncs_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/ncs/tncs_ext.cpp]
+mmtbx_ncs_restraints_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/ncs/restraints_ext.cpp]
+mmtbx_ramachandran_restraints_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/geometry_restraints/boost_python/ramachandran_ext.cpp]
+mmtbx_reference_coordinate_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/geometry_restraints/boost_python/reference_coordinate_ext.cpp]
+mmtbx_rotamer_fit_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/rotamer/fit_ext.cpp]
+mmtbx_rsr_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/rsr/rsr_ext.cpp]
+mmtbx_scaling_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/scaling/scaling_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/mmtbx/scaling/twinning_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/mmtbx/scaling/relative_scaling_bpl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/mmtbx/scaling/outlier_bpl.cpp]
+mmtbx_secondary_structure_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/secondary_structure/ext.cpp]
+mmtbx_tls_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/tls/tls_ext.cpp]
+mmtbx_utils_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/utils/utils_ext.cpp]
+mmtbx_validation_ramachandran_ext:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/validation/ramachandran/rama_eval_bpl.cpp]
+omptbx:
+  module: omptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/omptbx/stubs.cpp]
+omptbx_ext:
+  module: omptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/omptbx/ext.cpp]
+prime_ext:
+  module: prime
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/prime/ext.cpp]
+prime_index_ambiguity_ext:
+  module: prime
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/prime/index_ambiguity/ext.cpp]
+recviewer_ext:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/algorithms/rs_mapper/ext.cpp]
+regression_test_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/regression_test_ext.cpp]
+rstbx:
+  module: rstbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/rstbx/dps_core/dps_core.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/rstbx/dps_core/directional_fft.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/rstbx/dps_core/direction.cpp, /Users/nickd/dials/dist/modules/cctbx_project/rstbx/indexing_api/indexing_api.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/rstbx/diffraction/ewald_sphere.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/rstbx/diffraction/partial_spot_position_partial_H.cpp]
+rstbx_array_family_flex_ext:
+  module: rstbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/rstbx/array_family/ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/rstbx/array_family/flex_rstbx_arrays.cpp]
+rstbx_bandpass_ext:
+  module: rstbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/rstbx/bandpass/ext.cpp]
+rstbx_bpcx_detector_model_ext:
+  module: rstbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/rstbx/bpcx/detector_model/detector_model_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/rstbx/bpcx/detector_model/sensor.cpp]
+rstbx_diffraction_fastbragg_ext:
+  module: rstbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/rstbx/diffraction/fastbragg/fastbragg_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/rstbx/diffraction/fastbragg/fastbragg.cpp]
+rstbx_ext:
+  module: rstbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/rstbx/ext.cpp]
+rstbx_indexing_api_ext:
+  module: rstbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/rstbx/indexing_api/ext.cpp]
+rstbx_integration_ext:
+  module: rstbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/rstbx/apps/integration_ext.cpp]
+rstbx_simage_ext:
+  module: rstbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/rstbx/simage/ext.cpp]
+rstbx_simulation_ext:
+  module: rstbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/rstbx/simulation/ext.cpp]
+rstbx_symmetry_constraints_ext:
+  module: rstbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/rstbx/symmetry/constraints/ext.cpp]
+scitbx_array_family_flex_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_grid.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_bool.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_size_t.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_int.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_long.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_float.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_double.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_double_matrix.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_complex_double.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_std_string.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_random.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_sort.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_histogram.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_weighted_histogram.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_mean_and_variance.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_median.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_linear_interpolation.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_vec3_double.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_vec2_double.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_vec3_int.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_sym_mat3_double.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_mat3_double.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/flex_tiny_size_t_2.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/loops.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/show_sizes.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/numpy_bridge.cpp]
+scitbx_array_family_shared_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/shared_ext.cpp]
+scitbx_boost_python:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/boost_python/utils.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/boost_python/slice.cpp, /Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/boost_python/utils.cpp]
+scitbx_cubicle_neighbors_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/cubicle_neighbors_ext.cpp]
+scitbx_examples_bevington_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/examples/bevington/bevington_ext.cpp]
+scitbx_fftpack_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/fftpack/boost_python/fftpack_ext.cpp]
+scitbx_glmtbx_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/glmtbx/boost_python/ext.cc]
+scitbx_graphics_utils_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/graphics_utils/ext.cpp]
+scitbx_iso_surface_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/iso_surface/iso_surface_ext.cpp]
+scitbx_lbfgs_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/lbfgs/ext.cpp, scitbx/lbfgs/lbfgs_fem.cpp]
+scitbx_lbfgsb_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/lbfgsb/boost_python/lbfgsb_ext.cpp]
+scitbx_linalg_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/linalg/boost_python/linalg_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/linalg/boost_python/matrix.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/linalg/boost_python/cholesky.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/linalg/boost_python/householder.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/linalg/boost_python/svd.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/linalg/boost_python/eigensystem.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/linalg/boost_python/lapack_fem_bpl.cpp]
+scitbx_lstbx_normal_equations_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/lstbx/boost_python/lstbx_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/lstbx/boost_python/normal_equations.cpp]
+scitbx_math_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/math_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/basic_statistics.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/gaussian.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/golay.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/minimum_covering_sphere.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/principal_axes_of_inertia.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/row_echelon.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/tensor_rank_2.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/chebyshev.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/icosahedron.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/slatec.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/line_search.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/r3_rotation.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/resample.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/quadrature.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/unimodular_generator.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/halton.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/least_squares_plane.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/continued_fraction.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/numeric_limits.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/distributions.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/exp_functions.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/zernike.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/zernike_moments.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/2d_zernike_moments.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/weighted_covariance.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/rotation.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/interpolation.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/tetrahedron.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/boost_python/angle_derivative.cpp]
+scitbx_minpack:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/minpack/raw.cpp]
+scitbx_minpack_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/minpack/ext.cpp]
+scitbx_r3_utils_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/r3_utils_ext.cpp]
+scitbx_random_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/random/boost_python/random_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/random/boost_python/basic_distributions.cpp]
+scitbx_rigid_body_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/rigid_body/ext.cpp]
+scitbx_slatec:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/slatec/lib_c.c]
+scitbx_sparse_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/sparse/boost_python/vector.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/sparse/boost_python/matrix.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/sparse/boost_python/approx_equal.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/sparse/boost_python/random.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/sparse/boost_python/lu_factorization.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/sparse/boost_python/sparse_ext.cpp]
+scitbx_stl_map_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/stl/map_ext.cpp]
+scitbx_stl_set_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/stl/set_ext.cpp]
+scitbx_stl_vector_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/stl/vector_ext.cpp]
+scitbx_suffixtree_shared_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/suffixtree/boost_python/suffixtree_shared_ext.cpp]
+scitbx_suffixtree_single_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/suffixtree/boost_python/suffixtree_single_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/scitbx/suffixtree/boost_python/object_extensions.cpp]
+scitbx_wigner_ext:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/wigner/ext.cpp]
+sdrive_fem:
+  module: scitbx
+  sources: [scitbx/lbfgs/lbfgs_fem.cpp, scitbx/lbfgs/sdrive_fem.cpp]
+simtbx_nanoBragg_ext:
+  module: simtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/simtbx/nanoBragg/nanoBragg_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/simtbx/nanoBragg/nanoBragg.cpp]
+smtbx_ab_initio_ext:
+  module: smtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/smtbx/ab_initio/ab_initio_ext.cpp]
+smtbx_array_family_ext:
+  module: smtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/smtbx/array_family/af_ext.cpp]
+smtbx_refinement_constraints:
+  module: smtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/affine.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/geometrical_hydrogens.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/occupancy.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/reparametrisation.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/rigid.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/same_group.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/shared.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/special_position.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/symmetry_equivalent.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/u_eq_dependent_u_iso.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/u_iso_dependent_u_iso.cpp]
+smtbx_refinement_constraints_ext:
+  module: smtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/affine.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/constraints_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/direction.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/geometrical_hydrogens.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/independent_scalar_parameters.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/occupancy.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/reparametrisation.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/rigid.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/same_group.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/scatterer_parameters.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/shared.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/special_position.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/symmetry_equivalent.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/u_eq_dependent_u_iso.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/boost_python/u_iso_dependent_u_iso.cpp]
+smtbx_refinement_least_squares_ext:
+  module: smtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/boost_python/least_squares_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/boost_python/weighting_schemes.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/boost_python/least_squares.cpp]
+smtbx_refinement_restraints_ext:
+  module: smtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/restraints/boost_python/origin_fixing.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/restraints/boost_python/restraints_ext.cpp]
+smtbx_stl_map_ext:
+  module: smtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/smtbx/stl/map_ext.cpp]
+smtbx_structure_factors_direct_ext:
+  module: smtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/smtbx/structure_factors/direct/boost_python/ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/smtbx/structure_factors/direct/boost_python/standard_xray.cpp]
+spotfinder:
+  module: spotfinder
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/spotfinder/core_toolbox/spot.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/spotfinder/core_toolbox/libdistl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/spotfinder/core_toolbox/hough.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/spotfinder/core_toolbox/distl.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/spotfinder/core_toolbox/spotfilter.cpp]
+spotfinder_array_family_flex_ext:
+  module: spotfinder
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/spotfinder/array_family/flex_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/spotfinder/array_family/flex_distl_spot.cpp]
+spotfinder_distltbx_ext:
+  module: spotfinder
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/spotfinder/core_toolbox/boost_python/distltbx_ext.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/spotfinder/diffraction/geometry.cpp]
+spotfinder_dxtbx_ext:
+  module: spotfinder
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/spotfinder/dxtbx_toolbox/ext.cpp]
+spotfinder_hough_ext:
+  module: spotfinder
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/spotfinder/core_toolbox/boost_python/hough_ext.cpp]
+std_pair_ext:
+  module: boost_adaptbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/boost_adaptbx/std_pair_ext.cpp]
+test0:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/fftpack/timing/test0.cpp]
+time_trigonometry:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/math/time_trigonometry.cpp]
+tst:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/math/tests/tst.cpp]
+tst_accessors:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_accessors.cpp]
+tst_af_1:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_af_1.cpp]
+tst_af_2:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_af_2.cpp]
+tst_af_3:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_af_3.cpp]
+tst_af_4:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_af_4.cpp]
+tst_af_5:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_af_5.cpp]
+tst_asu:
+  module: cctbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/cctbx/sgtbx/direct_space_asu/proto/tst_asu.cpp]
+tst_base_256:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/serialization/tst_base_256.cpp]
+tst_cholesky:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/matrix/tests/tst_cholesky.cpp]
+tst_collision_detection:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/test/algorithms/spatial_indexing/tst_collision_detection.cc]
+tst_error:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/error/tst_error.cpp]
+tst_geometrical_hydrogens:
+  module: smtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/tests/tst_geometrical_hydrogens.cpp]
+tst_givens:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/matrix/tests/tst_givens.cpp]
+tst_householder:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/matrix/tests/tst_householder.cpp]
+tst_lbfgs:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/lbfgs/tst_lbfgs.cpp]
+tst_mask:
+  module: mmtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/mmtbx/masks/tst_mask.cpp]
+tst_mat3:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_mat3.cpp]
+tst_octree:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/test/algorithms/spatial_indexing/tst_octree.cc]
+tst_optional_copy:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_optional_copy.cpp]
+tst_quadtree:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/test/algorithms/spatial_indexing/tst_quadtree.cc]
+tst_reeke_model:
+  module: dials
+  sources: [/Users/nickd/dials/dist/modules/dials/test/algorithms/spot_prediction/tst_reeke_model.cc]
+tst_ref_matrix_facet:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_ref_matrix_facet.cpp]
+tst_reparametrisation:
+  module: smtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/tests/tst_reparametrisation.cpp]
+tst_sparse:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/sparse/tests/tst_sparse.cpp]
+tst_special_position:
+  module: smtbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/smtbx/refinement/constraints/tests/tst_special_position.cpp]
+tst_svd:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/matrix/tests/tst_svd.cpp]
+tst_sym_mat3:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_sym_mat3.cpp]
+tst_unsigned_float_arithmetic:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_unsigned_float_arithmetic.cpp]
+tst_vec3:
+  module: scitbx
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/scitbx/array_family/tst_vec3.cpp]
+xes_ext:
+  module: xfel
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/xfel/vonHamos/xes_ext.cpp]
+xfel_ext:
+  module: xfel
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/xfel/ext.cpp]
+xfel_legacy_scale_ext:
+  module: xfel
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/xfel/metrology/legacy_scale/ext.cpp]
+xfel_metrology_ext:
+  module: xfel
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/xfel/metrology_ext.cpp]
+xfel_mono_sim:
+  module: xfel
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/xfel/mono_simulation/bandpass_gaussian.cpp,
+    /Users/nickd/dials/dist/modules/cctbx_project/xfel/mono_simulation/ccixfel_core.cpp]
+xfel_mono_sim_ext:
+  module: xfel
+  sources: [/Users/nickd/dials/dist/modules/cctbx_project/xfel/mono_simulation/ext.cpp]
+xia2_pychef_ext:
+  module: xia2
+  sources: [/Users/nickd/dials/dist/modules/xia2/Modules/PyChef2/ext.cc]
