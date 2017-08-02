@@ -6,7 +6,7 @@ from .model import Header, SourceFile
 class DepParser(object):
   """Read multiple GCC-style header depth trees and combine results."""
   def __init__(self, filters=set()):
-    self.headers = {}
+    self._headers = {}
     self.source_files = []
     self.filters = set(filters)
 
@@ -27,14 +27,16 @@ class DepParser(object):
     return all(fnmatch.fnmatch(filename, pattern) for pattern in self.filters)
 
   @property
+  def headers(self):
+    return self._headers.items()
+  
+  @property
   def filtered_headers(self):
     """Get the subset of known headers that pass the filters"""
-    return [x for x in self.headers.values() if self._header_allowed(x.name)]
+    return [x for x in self._headers.values() if self._header_allowed(x.name)]
 
   def parse(self, filename, source_filename=None):
     lines = [x for x in open(filename).readlines() if x.startswith(".")]
-
-    headers = {}
 
     source_file = SourceFile(source_filename)
     current_owner = [source_file]

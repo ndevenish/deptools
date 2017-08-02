@@ -36,3 +36,21 @@ dictionary and pass it to `DepParser.from_dict`:
 
 By default, the `read_dep_files.py` tool writes a yaml-converted version
 of the dictionary.
+
+The class `deptools.SourceFile` represents files passed directly to the compiler;
+they have the properties `.name` and `.object` for the source file and output
+object file names, and a collection of `.includes`, an entry for each header file.
+
+The class `deptools.Header` represents any file that is included by another file.
+It has a `.name` property, an `.includes` collection (of other header files that it
+depends on) and an `.included` collection mapping back to files (headers or source)
+that include it.
+
+After loading a `deptools.DepParser` file, you can use the attribute `.source_files`
+to access a collection of `SourceFile` objects, and the attribute `.headers` to get
+a flat list of **all** header files that are tracked with the object. During
+initial processing, it is possible to add a set of filters (`.filters` attribute)
+and this reduced header set can be accessed through the `.filtered_headers`
+attribute, but note that changing the filters will not remove items from the
+`SourceFile` data tree.
+
