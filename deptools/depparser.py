@@ -11,10 +11,10 @@ class DepParser(object):
     self.filters = set(filters)
 
   def _get_header(self, filename):
-    header = self.headers.get(filename)
+    header = self._headers.get(filename)
     if not header:
       header = Header(filename)
-      self.headers[filename] = header
+      self._headers[filename] = header
     return header
 
   def _header_allowed(self, filename):
@@ -29,13 +29,14 @@ class DepParser(object):
   @property
   def headers(self):
     return self._headers.items()
-  
+
   @property
   def filtered_headers(self):
     """Get the subset of known headers that pass the filters"""
     return [x for x in self._headers.values() if self._header_allowed(x.name)]
 
   def parse(self, filename, source_filename=None):
+    "Parse a dependency file and add it to the database graph"
     lines = [x for x in open(filename).readlines() if x.startswith(".")]
 
     source_file = SourceFile(source_filename)
@@ -69,14 +70,31 @@ class DepParser(object):
     self.source_files.append(source_file)
     return source_file
 
-  def to_dict(self):
+  def asdict(self):
     d = {
-      "source_files": [x.asdict() for x in self.source_files],
-      "headers": [x.asdict() for x in self.filtered_headers]
+      "source_files": [x.asdict() for x in sorted(self.source_files, key=lambda x: x.name)],
+      "headers": [x.asdict() for x in sorted(self.filtered_headers, key=lambda x: x.name)]
     }
     return d
 
-
   @classmethod
-  def from_dict(cls):
-    pass
+  def fromdict(cls, d):
+    """From a dictionary, reconstruct the source graph"""
+    parser = cls()
+    for dsource in d["source_files"]:
+      source = SourceFile(dsource["name"])
+      source.object = dsource.get("object")
+      parser.source_files.append(source)
+
+      for filename in dsource.get("includes", []):
+        header = parser._get_header(filename)
+        source.includes.add(header)
+    for dheader in d["headers"]:
+      header = parser._get_header(dheader["name"])
+      for filename in dheader.get("includes",[]):
+        header.add(parser._get_header(filename))
+    return parser
+
+
+
+

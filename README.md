@@ -29,10 +29,10 @@ To process a dumped file (in yaml or any other format) load it into a
 dictionary and pass it to `DepParser.from_dict`:
 
     # Given an instance of DepParser, parser
-    dict_data = parser.as_dict()
+    dict_data = parser.asdict()
 
     from deptools import DepParser
-    newParser = DepParser.from_dict(dict_data)
+    newParser = DepParser.fromdict(dict_data)
 
 By default, the `read_dep_files.py` tool writes a yaml-converted version
 of the dictionary.

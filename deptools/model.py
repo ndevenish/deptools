@@ -31,7 +31,7 @@ class SourceFile(CPPFile):
     if self.object:
       d["object"] = self.object
     if self.includes:
-      d["includes"] = [x.name for x in self.includes]
+      d["includes"] = list(sorted([x.name for x in self.includes]))
     return d
 
 class Header(CPPFile):
@@ -51,7 +51,7 @@ class Header(CPPFile):
   def asdict(self):
     d = {"name": self.name}
     if self.includes:
-      d["includes"] = [x.name for x in self.includes]
+      d["includes"] = list(sorted([x.name for x in self.includes]))
     return d
 
 
