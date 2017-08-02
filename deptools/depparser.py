@@ -2,6 +2,7 @@
 
 import fnmatch
 from .model import Header, SourceFile
+# from collections import Counter
 
 class DepParser(object):
   """Read multiple GCC-style header depth trees and combine results."""
@@ -77,6 +78,23 @@ class DepParser(object):
     }
     return d
 
+  def merge_multiple_source(self):
+    """Merge multiple source files. Since object files can still be unique, discards that information"""
+    all_sourcenames = {x.name for x in self.source_files}
+    for sourcename in all_sourcenames:
+      sources = [x for x in self.source_files if x.name == sourcename]
+      if len(sources) > 1:
+        # Merge source files.
+        canonical, others = sources[0], sources[1:]
+        canonical.object = None
+        for dupe in others:
+          canonical.includes |= dupe.includes
+          self.source_files.remove(dupe)
+          # Reassign the owner for all headers
+          for header in dupe.includes:
+            header.included.remove(dupe)
+            header.included.add(canonical)
+
   def remove_root(self, prefix):
     """Remove a root prefix from all objects."""
     l = len(prefix)
@@ -102,7 +120,7 @@ class DepParser(object):
 
       for filename in dsource.get("includes", []):
         header = parser._get_header(filename)
-        source.includes.add(header)
+        source.add(header)
     for dheader in d["headers"]:
       header = parser._get_header(dheader["name"])
       for filename in dheader.get("includes",[]):
