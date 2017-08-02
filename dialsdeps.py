@@ -57,6 +57,9 @@ class Target(object):
     self.sources = sources or set()
   def __repr__(self):
     return "Target('{}', '{}')".format(self.name, self.module)
+  @property
+  def is_interface(self):
+    return not any(isinstance(x, SourceFile) for x in self.sources)
 
 def _read_targets(dictdata, depgraph):
   """Read an iterable of targets from a target dictionary"""
@@ -154,12 +157,9 @@ for header in depgraph.headers:
 
   next(iter(header.targets)).sources.add(header)
 
-# Now, assign every header to it's target object
 
-module_deps = defaultdict(set)
-
-# Generate a header-dependence graph for modules
-for target in targets.values():
+def _collect_target_dependencies(target):
+  """Collects all dependencies of a target's sources - without filtering"""
   source_targets = set()
   for source in target.sources:
     # Collate the targets of all included files
@@ -167,37 +167,73 @@ for target in targets.values():
       source_targets |= include.targets
   # No self-referencing
   source_targets -= {target}
-  
-  # if target.name == "dials_algorithms_spot_finding_helen_ext":
-  #   import pdb
-  #   pdb.set_trace()
+  return source_targets
+
+module_deps = defaultdict(set)
+target_deps = defaultdict(set)
+
+# Generate a header-dependence graph for modules
+for target in targets.values():
+  source_targets = _collect_target_dependencies(target)
+
+  # Assuming that every target depends on it's own module name (as it exists within it)
+  # then we can remove any targets for which the module also depends on it
+  # - This will leave the sub-targets which have dependencies different from the module's
+  if not target == targets[target.module]:
+    moddeps = _collect_target_dependencies(targets[target.module])
+    if moddeps & source_targets:
+      print("removing ", moddeps & source_targets)
+    source_targets -= moddeps
 
   # Ignore this target if the only dependency is also the module name
   if source_targets == {targets[target.module]}:
     print("Skipping target {}".format(target.name))
     continue
+
   if source_targets:
-    module_deps[target.name] |= {x.name for x in source_targets} - {target.name}
+    target_deps[target.name] |= {x.name for x in source_targets} - {target.name}
+  module_deps[target.module] |= {x.module for x in source_targets} - {target.module}
 
 # import pdb
 # pdb.set_trace()
   # module_deps[header.module] |= set(x.module for x in header.includes) - {header.module}
   # }
 
-graph = gv.Digraph()
-for module in module_deps:
-  graph.node(module)
+def generate_graph(deps):
+  graph = gv.Digraph(graph_attr={"overlap": "false"})
 
-for module, deps in module_deps.items():
-  for dep in deps:
-    graph.edge(module, dep)
+  for module in deps: # [x for x in module_deps if targets[x].is_interface:
+    if targets[module].is_interface:
+      graph.attr('node', shape='ellipse')
+    else:
+      graph.attr('node', shape='box')
+    if targets[module].name in modules:
+      graph.attr('node', fontsize="14", penwidth="2")
+    else:
+      graph.attr('node', fontsize="8", width="0", penwidth="1")
+    graph.node(module)
+  # for module in [x for x in module_deps if not targets[x].is_interface:
+  #   graph.node(module)
 
-# g2 = gv.Digraph(format='svg')
-# g2.node('A')
-# g2.node('B')
-# g2.edge('A', 'B')
-# g2.render('img/g2')
-with open("deps.gv", "w") as f:
-  f.write(str(graph))
+  for module, deps in deps.items():
+    for dep in deps:
+      graph.edge(module, dep)
+
+  return graph
+
+  # g2 = gv.Digraph(format='svg')
+  # g2.node('A')
+  # g2.node('B')
+  # g2.edge('A', 'B')
+  # g2.render('img/g2')
+
+all_deps = generate_graph(target_deps)
+mod_deps = generate_graph(module_deps)
+
+with open("all_deps.gv", "w") as f:
+  f.write(str(all_deps))
+with open("mod_deps.gv", "w") as f:
+  f.write(str(mod_deps))
+
 pprint (module_deps)
 
