@@ -28,6 +28,7 @@ class DepParser(object):
 
   @property
   def filtered_headers(self):
+    """Get the subset of known headers that pass the filters"""
     return [x for x in self.headers.values() if self._header_allowed(x.name)]
 
   def parse(self, filename, source_filename=None):
@@ -65,3 +66,15 @@ class DepParser(object):
     assert len(current_owner) >= 1, "Should never pop last list item"
     self.source_files.append(source_file)
     return source_file
+
+  def to_dict(self):
+    d = {
+      "source_files": [x.asdict() for x in self.source_files],
+      "headers": [x.asdict() for x in self.filtered_headers]
+    }
+    return d
+
+
+  @classmethod
+  def from_dict(cls):
+    pass

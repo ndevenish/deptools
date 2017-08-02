@@ -49,9 +49,4 @@ for command in commands:
   objindex = command.index("-o")
   source.object = os.path.normpath(os.path.join(directory, command[objindex+1]))
 
-# Build a dictionary for yaml
-d = {
-  "source_files": [x.asdict() for x in parser.source_files],
-  "headers": [x.asdict() for x in parser.filtered_headers]
-}
-open(options["--output"], "w").write(yaml.dump(d))
+open(options["--output"], "w").write(yaml.dump(parser.to_dict()))
