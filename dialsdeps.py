@@ -235,5 +235,5 @@ with open("all_deps.gv", "w") as f:
 with open("mod_deps.gv", "w") as f:
   f.write(str(mod_deps))
 
-pprint (module_deps)
+pprint (target_deps)
 
