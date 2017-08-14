@@ -95,8 +95,12 @@ class ImportVisitor(ast.NodeVisitor):
         tree = ast.parse(open(os.path.join(path, filename)).read(), filename)
         v = cls()
         v.visit(tree)
-        definite_imports |= v._imports
-        protected_imports |= v._conditional_imports
+        # Do a dumb 'filter' on files that look like tests and mark the imports optional
+        if filename.startswith("tst_") or filename.startswith("test_"):
+          protected_imports |= v._conditional_imports | v._imports
+        else:
+          definite_imports |= v._imports
+          protected_imports |= v._conditional_imports
 
     return (definite_imports, protected_imports)
 
