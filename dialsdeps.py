@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
+"""Analyse dependency files and writes out a graph.
+
+Much is hardcoded for now.
+
+Usage: 
+  dialsdeps.py [-o OUTPUT]
+
+Options:
+  -o OUTPUT     Write to a yaml output file the module dependency information
+"""
+
 from collections import defaultdict
 import os
 import yaml
@@ -8,6 +19,7 @@ from deptools import DepParser, SourceFile
 import graphviz as gv
 from pprint import pprint
 import itertools
+from docopt import docopt
 
 # The path used for absolute files in the targetmap
 TARGETMAP_ROOT="/Users/nickd/dials/dist/modules"
@@ -106,6 +118,8 @@ def _read_targets(dictdata, depgraph):
         module_mismatch.add((source.module, target.module))
     yield target
 
+options = docopt(__doc__)
+
 # Load the dependency graph of every file, and what it includes
 depgraph = DepParser.fromdict(yaml.load(open("depdata.yaml")))
 depgraph.merge_multiple_source()
@@ -165,7 +179,7 @@ for header in depgraph.headers:
 
 
 def _collect_target_dependencies(target):
-  """Collects all dependencies of a target's sources - without filtering"""
+  """Collects all direct dependencies of a target's sources - without filtering"""
   source_targets = set()
   for source in target.sources:
     # Collate the targets of all included files
@@ -183,8 +197,9 @@ for target in targets.values():
   source_targets = _collect_target_dependencies(target)
 
   # Assuming that every target depends on it's own module name (as it exists within it)
-  # then we can remove any targets for which the module also depends on it
-  # - This will leave the sub-targets which have dependencies different from the module's
+  # and therefore has access to any of the module's dependencies, then we can remove
+  # any dependencies from the target that are duplicated on the module-target. This means
+  # that the sub-module target will only have the dependencies that differ from it's parent module's
   if not target == targets[target.module]:
     moddeps = _collect_target_dependencies(targets[target.module])
     if moddeps & source_targets:
@@ -196,9 +211,10 @@ for target in targets.values():
     print("Skipping target {}".format(target.name))
     continue
 
+  # If the target has any dependencies...
   if source_targets:
     target_deps[target.name] |= {x.name for x in source_targets} - {target.name}
-  module_deps[target.module] |= {x.module for x in source_targets} - {target.module}
+    module_deps[target.module] |= {x.module for x in source_targets} - {target.module}
 
 # import pdb
 # pdb.set_trace()
@@ -241,5 +257,9 @@ with open("all_deps.gv", "w") as f:
 with open("mod_deps.gv", "w") as f:
   f.write(str(mod_deps))
 
-pprint (target_deps)
-
+# pprint (target_deps)
+if options["-o"]:
+  with open(options["-o"], "wt") as f:
+    outdir = {name: list(value) for name, value in module_deps.items()}
+    outdir["_library"] = [x.name for x in targets.values() if not x.is_interface and x.name == x.module]
+    yaml.dump(outdir, stream=f)
