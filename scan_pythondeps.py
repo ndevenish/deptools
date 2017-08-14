@@ -29,15 +29,20 @@ import yaml
 from docopt import docopt
 
 # A list of all valid module names. Used to filter out external dependencies and
-# other stray folders that could pollute the names
-module_names = { "annlib", "annlib_adaptbx", "boost_adaptbx", "cbflib", "cbflib_adaptbx", 
-            "ccp4io", "ccp4io_adaptbx", "cctbx", "chiltbx", "clipper", "clipper_adaptbx", 
-            "cma_es", "cootbx", "crys3d", "cudatbx", "cxi_user", "dials", "dxtbx", "fable", 
-            "fftw3tbx", "gltbx", "gui_resources", "iota", "iotbx", "libtbx", "mmtbx", "omptbx", 
-            "prime", "rstbx", "scitbx", "simtbx", "smtbx", "sphinx", "spotfinder", "tbxx", 
-            "tntbx", "ucif", "wxtbx", "xfel", "xia2"}
-
-read_module_names = {"libtbx"}
+# other stray folders that could pollute the names. Taken from union of dials and 
+# phenix builders. This includes non tbx-'module' dependencies that are internal.
+module_names = {'amber_adaptbx', 'annlib', 'annlib_adaptbx', 'boost_adaptbx', 
+                'cbflib', 'cbflib_adaptbx', 'ccp4io', 'ccp4io_adaptbx', 'cctbx', 
+                'cctbx_project', 'chem_data', 'chiltbx', 'clipper', 'clipper_adaptbx', 
+                'cma_es', 'cootbx', 'crys3d', 'cudatbx', 'cxi_user', 'dials', 
+                'dials_regression', 'dxtbx', 'elbow', 'fable', 'fftw3tbx', 'gltbx', 
+                'gui_resources', 'iota', 'iotbx', 'king', 'ksdssp', 'labelit', 
+                'libtbx', 'mmtbx', 'muscle', 'omptbx', 'opt_resources', 'phaser', 
+                'phaser_regression', 'phenix', 'phenix_examples', 'phenix_html', 
+                'phenix_regression', 'Plex', 'prime', 'probe', 'pulchra', 'PyQuante', 
+                'reduce', 'reel', 'rstbx', 'scitbx', 'scons', 'simtbx', 'smtbx', 
+                'solve_resolve', 'sphinx', 'spotfinder', 'suitename', 'tbxx', 'tntbx', 
+                'ucif', 'wxtbx', 'xfel', 'xia2', 'xia2_regression'}
 
 class ImportVisitor(ast.NodeVisitor):
   """Visit and list all import nodes in a python AST"""
@@ -104,6 +109,7 @@ mod_paths.update({x: os.path.join(dest_dir, "cctbx_project", x) for x in os.list
 
 mod_deps = {}
 
+# Read every module that we found
 for module, path in sorted(mod_paths.items()):
   print("Scanning {} for dependencies".format(module), file=sys.stderr)
   all_includes = ImportVisitor.visit_path(path)
