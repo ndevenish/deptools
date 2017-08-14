@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# coding: utf-8
 
 from collections import defaultdict
 import os
@@ -13,7 +14,7 @@ TARGETMAP_ROOT="/Users/nickd/dials/dist/modules"
 BUILD_DIR="/Users/nickd/dials/prep/_build"
 SOURCE_DIR="/Users/nickd/dials/prep"
 
-# Sanity check against things going wrong
+# Sanity check against things going wrong. Only consider these modules.
 VALID_MODULES = {'annlib', 'smtbx', 'boost_adaptbx', 'scitbx', 'xfel',
 'spotfinder', 'chiltbx', 'dxtbx', 'iotbx', 'gltbx', 'cbflib_adaptbx', 'fable',
 'simtbx', 'cctbx', 'annlib_adaptbx', 'mmtbx', 'omptbx', 'rstbx', 'ccp4io',
@@ -21,6 +22,7 @@ VALID_MODULES = {'annlib', 'smtbx', 'boost_adaptbx', 'scitbx', 'xfel',
 'cbflib', 'dials', 'ucif', 'gui_resources', "tbxx"}
 
 def module_from_path(path):
+  """Given a pathname, returns the module it describes"""
   opath = path
   # Remove the leading path
   if path.startswith(BUILD_DIR):
@@ -44,6 +46,7 @@ def module_from_path(path):
   return module
 
 def _makerel(path):
+  """Convert a path to a relative path, by removing any known prefix"""
   paths = list(reversed(sorted([TARGETMAP_ROOT, BUILD_DIR, SOURCE_DIR], key=lambda x: len(x))))
   for prefix in paths:
     if path.startswith(prefix):
@@ -59,6 +62,7 @@ class Target(object):
     return "Target('{}', '{}')".format(self.name, self.module)
   @property
   def is_interface(self):
+    """A target is interface-only if it doesn't build a named library (e.g. have sources)"""
     return not any(isinstance(x, SourceFile) for x in self.sources)
 
 def _read_targets(dictdata, depgraph):
@@ -102,7 +106,7 @@ def _read_targets(dictdata, depgraph):
         module_mismatch.add((source.module, target.module))
     yield target
 
-# Load the dependency graph
+# Load the dependency graph of every file, and what it includes
 depgraph = DepParser.fromdict(yaml.load(open("depdata.yaml")))
 depgraph.merge_multiple_source()
 # Clean it up
@@ -126,7 +130,9 @@ modules = {x.module for x in targets.values()} | \
 assert modules < VALID_MODULES, "Badly classified targets"
 print("All modules: {}".format(", ".join(modules)))
 
-# Make sure we have target objects for every module - it will take posession of headers
+# Make sure we have target objects for every module that doesn't have a built 
+# target - we will associate every header file to a target, and those that are
+# shared will be associated with it's module-target.
 for module in modules:
   if not module in targets:
     targets[module] = Target(module, module)

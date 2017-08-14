@@ -79,7 +79,11 @@ class DepParser(object):
     return d
 
   def merge_multiple_source(self):
-    """Merge multiple source files. Since object files can still be unique, discards that information"""
+    """Merge dependencies for multiple source files.
+
+    More than one object file can be built from the same source file, which is
+    how we can end up with multiple dependency entries for the same source. This
+    means we have to discard the object-file information."""
     all_sourcenames = {x.name for x in self.source_files}
     for sourcename in all_sourcenames:
       sources = [x for x in self.source_files if x.name == sourcename]

@@ -33,7 +33,7 @@ from docopt import docopt
 # phenix builders. This includes non tbx-'module' dependencies that are internal.
 module_names = {'amber_adaptbx', 'annlib', 'annlib_adaptbx', 'boost_adaptbx', 
                 'cbflib', 'cbflib_adaptbx', 'ccp4io', 'ccp4io_adaptbx', 'cctbx', 
-                'cctbx_project', 'chem_data', 'chiltbx', 'clipper', 'clipper_adaptbx', 
+                'chem_data', 'chiltbx', 'clipper', 'clipper_adaptbx', 
                 'cma_es', 'cootbx', 'crys3d', 'cudatbx', 'cxi_user', 'dials', 
                 'dials_regression', 'dxtbx', 'elbow', 'fable', 'fftw3tbx', 'gltbx', 
                 'gui_resources', 'iota', 'iotbx', 'king', 'ksdssp', 'labelit', 
@@ -48,82 +48,96 @@ class ImportVisitor(ast.NodeVisitor):
   """Visit and list all import nodes in a python AST"""
   def __init__(self, *args, **kwargs):
     self._imports = set()
-    # self._cond_imports = set()
-    # self._if_nodes = set()
-    # self._import_nodes = set()
+    self._conditional_imports = set()
     super(ImportVisitor, self).__init__(*args, **kwargs)
 
   # # If(expr test, stmt* body, stmt* orelse)
-  # def visit_If(self, node):
-  #   v2 = ImportVisitor()
-  #   v2.filename = self.filename
-  #   for stmt in node.body:
-  #     v2.visit(stmt)
-  #   for stmt in node.orelse:
-  #     v2.visit(stmt)
-  #   self._cond_imports |= v2._imports | v2._cond_imports
-  #   self._if_nodes |= v2._import_nodes
+  def visit_If(self, node):
+    v2 = ImportVisitor()
+    for stmt in node.body:
+      v2.visit(stmt)
+    for stmt in node.orelse:
+      v2.visit(stmt)
+    self._conditional_imports |= v2._imports | v2._conditional_imports
 
   def visit_Import(self, node):
-    # if node in self._if_nodes:
-    #   print("node already visited by another iterator")
-    # self._import_nodes.add(node)
     self._imports |= {alias.name for alias in node.names}
 
   def visit_ImportFrom(self, node):
-    # if node in self._if_nodes:
-    #   print("node already visited by another iterator")
-    # self._import_nodes.add(node)
     self._imports.add(node.module)
+
+
+   # TryExcept(stmt* body, excepthandler* handlers, stmt* orelse)
+   #        | TryFinally(stmt* body, stmt* finalbody)
+  def visit_TryExcept(self, node):
+    v2 = ImportVisitor()
+    for stmt in node.body:
+      v2.visit(stmt)
+    # Assume that everything inside this try-except is protected
+    self._conditional_imports |= v2._imports | v2._conditional_imports
 
   @classmethod
   def visit_path(cls, pathname):
-    all_includes = set()
-    # all_opts = set()
-    if os.path.isdir(pathname):
-      for path, dirs, files in os.walk(pathname):
-        for filename in [x for x in files if x.endswith(".py")]:
-          # print(filename + ":")
-          tree = ast.parse(open(os.path.join(path, filename)).read(), filename)
-          v = cls()
-          # v.filename = filename
-          v.visit(tree)
-          all_includes |= v._imports
-          # all_opts |= v._cond_imports
-    else:
-      tree = ast.parse(open(filename).read(), filename)
-      v = cls()
-      v.visit(tree)
-    return all_includes
+    """Visit a directory and inspect python files for all imports.
 
-# options = {
-#   "<module_path>": ".",
-#   "-o": None
-# }
+    Returns a tuple of (imports, conditional_imports), where a conditional
+    import is counted as any import wrapped in an 'if' statement, or a 'try'
+    block. No attempt is made to resolve the conditions of the 'if' or exceptions
+    handled by the try block.
+    """
+    definite_imports = set()
+    protected_imports = set()
+
+    assert os.path.isdir(pathname), "{} is not a dir".format(pathname)
+    # Walk every (.py) file in this directory
+    for path, dirs, files in os.walk(pathname):
+      for filename in [x for x in files if x.endswith(".py")]:
+        tree = ast.parse(open(os.path.join(path, filename)).read(), filename)
+        v = cls()
+        v.visit(tree)
+        definite_imports |= v._imports
+        protected_imports |= v._conditional_imports
+
+    return (definite_imports, protected_imports)
+
+def _module_names(imports):
+  """Returns a list of module names involved in a list of import names.
+
+  e.g. 'dials.algorithms' will return 'dials'. Any name that isn't a module
+  will be missing from the output set."""
+  deps = set()
+  for potential_dep in imports:
+    root_name = potential_dep.split(".")[0]
+    if root_name in module_names:
+      deps.add(root_name)
+  return deps
+
+# Read the command line arguments
 options = docopt(__doc__)
 dest_dir = options["<module_path>"]
 
 # Search for all modules by looking in the provided directory and matching to known module names
-mod_paths = {x: x for x in os.listdir(dest_dir) if os.path.isdir(os.path.join(dest_dir, x)) and x in module_names}
+mod_paths = {x: os.path.join(dest_dir, x) for x in os.listdir(dest_dir) if os.path.isdir(os.path.join(dest_dir, x)) and x in module_names}
 mod_paths.update({x: os.path.join(dest_dir, "cctbx_project", x) for x in os.listdir(os.path.join(dest_dir, "cctbx_project")) if os.path.isdir(os.path.join(dest_dir, "cctbx_project", x)) and x in module_names})
 
-mod_deps = {}
+mod_deps = {"_optional":{}}
+# mod_deps_optional = {}
 
-# Read every module that we found
+# Read every module that we found to build the map
 for module, path in sorted(mod_paths.items()):
   print("Scanning {} for dependencies".format(module), file=sys.stderr)
-  all_includes = ImportVisitor.visit_path(path)
-  # print("Incs: ", all_includes)
-  # print()
-  # print("Optionals: ", opts)
-  deps = set()
-  for potential_dep in all_includes:
-    root_name = potential_dep.split(".")[0]
-    if root_name in module_names and not root_name == module:
-      deps.add(root_name)
+  imports, optional_imports = ImportVisitor.visit_path(path)
+
+  deps = _module_names(imports) - {module}
+  deps_optional = _module_names(optional_imports) - {module}
+  # All we care about with optional is those which are not required anyway
+  deps_optional -= deps
+
   # Don't give entries for modules without any python dependencies
   if deps:
-    mod_deps[module] = list(deps)
+    mod_deps[module] = sorted(deps)
+  if deps_optional:
+    mod_deps["_optional"][module] = sorted(deps_optional)
 
 if options["-o"]:
   with open(options["-o"], "wt") as f:
